@@ -12,28 +12,34 @@
   <script>
     const output = document.getElementById("output");
 
+    const moods = ["😊", "😴", "😅", "🥱", "😌", "🤩"];
+
+    function randomMood() {
+    return moods[Math.floor(Math.random() * moods.length)];
+    }
+
     setTimeout(() => {
-    output.textContent = "7:00 AM - Waking up, stretching, and reading";
+    output.textContent = `7:00 AM - Waking up, stretching, and reading ${randomMood()}`;
     }, 1000);
 
     setTimeout(() => {
-    output.textContent = "7:30 AM - Making coffee, and getting ready for the day";
+    output.textContent = `7:30 AM - Making coffee, and getting ready for the day ${randomMood()}`;
     }, 2500);
 
     setTimeout(() => {
-    output.textContent = "9:00 AM - Starting work, checking emails, and planning tasks";
+    output.textContent = `9:00 AM - Starting work, checking emails, and planning tasks ${randomMood()}`;
     }, 4000);
 
     setTimeout(() => {
-    output.textContent = "12:00 PM - Lunch break";
+    output.textContent = `12:00 PM - Lunch break ${randomMood()}`;
     }, 5500);
 
     setTimeout(() => {
-    output.textContent = "3:00 PM - Walking outside with my dog for a break";
+    output.textContent = `3:00 PM - Walking outside with my dog for a break ${randomMood()}`;
     }, 7000);
 
     setTimeout(() => {
-    output.textContent = "8:00 PM - Winding down with a show";
+    output.textContent = `8:00 PM - Winding down with a show ${randomMood()}`;
     }, 8500);
   </script>
 
